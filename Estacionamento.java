@@ -35,7 +35,7 @@ public class Estacionamento {
     }
 
     public double pagar() {
-        double diferenca;
+        double espaco;
         double a1, a2;
         int k, j;
         k = Math.round(this.incarro);
@@ -44,9 +44,9 @@ public class Estacionamento {
         a2 = this.outcarro - j;
         a2 = a2 * 0.6;
         a1 = a1 * 0.6;
-        diferenca = (j - k) + (a1 - a2);
-        diferenca = diferenca * 1.5;
+        espaco = (j - k) + (a1 - a2);
+        espaco = espaco * 1.5;
 
-        return diferenca;
+        return espaco;
     }
 }
